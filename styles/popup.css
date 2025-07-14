@@ -1,0 +1,55 @@
+/* Styling for the popup container */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+    animation: popupFadeIn 0.5s ease-in-out;
+}
+
+/* Success icon styling */
+.success-icon {
+    font-size: 50px;
+    color: #28a745; /* Green color similar to the one in the image */
+}
+
+/* Heading */
+.popup h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Return prompt */
+.popup h3 {
+    font-size: 16px;
+    color: #007bff; /* Blue color for the return text */
+    cursor: pointer;
+}
+
+/* Simple animation for popup */
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Ensure the popup takes full screen width on mobile devices */
+@media (max-width: 480px) {
+    .popup {
+        width: 90%;
+        padding: 15px;
+    }
+}

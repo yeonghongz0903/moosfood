@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.help-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    color: #555555;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+/* FAQs Section */
+.faq-container {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #007BFF;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.faq-item:hover {
+    transform: scale(1.02);
+    background-color: #eaeaea;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* How to Order Section */
+.order-steps {
+    list-style-type: decimal;
+    padding-left: 40px;
+    color: #333;
+    font-size: 18px;
+}
+
+.order-steps li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.order-steps li::marker {
+    color: #007BFF;
+    font-size: 20px;
+}
+
+/* Contact Support Section */
+.contact-details {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-details li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-details a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-details a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* General Spacing and Layout */
+p, li {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+ol {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .help-section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .faq-item h3 {
+        font-size: 18px;
+    }
+
+    .order-steps li {
+        font-size: 16px;
+    }
+
+    .contact-details li {
+        font-size: 16px;
+    }
+}

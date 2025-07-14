@@ -1,0 +1,89 @@
+/* Profile Page Styles */
+.profile-container {
+    display: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f4f4f4; /* Light background for the profile page */
+}
+
+.profile {
+    background-color: #ffffff; /* White background for the profile card */
+    padding: 30px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 500px; /* Maximum width of the profile card */
+    text-align: center; /* Left-align the text */
+}
+
+.profile > container {
+    margin: 150px;
+}
+
+.profile h1 {
+    font-size: 24px; /* Font size for the title */
+    color: #333; /* Dark color for better readability */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
+.profile p {
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.profile input[type="text"],
+.profile input[type="email"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin: 10px 0; /* Space above and below inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ccc; /* Light border */
+    box-sizing: border-box; /* Include padding in width calculation */
+    font-size: 14px; /* Font size for inputs */
+}
+
+.profile input[type="text"]:focus,
+.profile input[type="email"]:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.profile button {
+    background-color: #007BFF; /* Primary button color */
+    color: #ffffff; /* White text color */
+    padding: 10px 15px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width button */
+    font-size: 16px; /* Font size for button */
+    margin-top: 20px; /* Space above the button */
+}
+
+.profile button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.profile button:active {
+    box-shadow: 0 5px darkgrey; /* Shadow effect on click */
+    transform: translateY(1px); /* Slight move down effect */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .profile {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .profile h1 {
+        font-size: 22px; /* Slightly smaller title on mobile */
+    }
+
+    .profile input[type="text"],
+    .profile input[type="email"],
+    .profile button {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+}

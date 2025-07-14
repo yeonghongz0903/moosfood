@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9; /* Light background for better contrast */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.picture-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #ff6b6b;
+    color: white; /* Changed text color to contrast with background */
+}
+
+.founder-image {
+    width: 250px;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    color: #333; /* Darker text for better readability */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    justify-content: space-around; /* Space out columns */
+    margin: 20px 0;
+}
+
+.column {
+    flex: 1 1 30%; /* Allow columns to grow and shrink */
+    margin: 10px;
+    min-width: 250px; /* Minimum width for responsiveness */
+}
+
+.container {
+    background-color: white; /* White background for content */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    font-size: 16px;
+    color: #333;
+    text-transform: capitalize;
+    position: relative;
+}
+
+h3 {
+    color: #ff6b6b; /* Title color matching the header */
+}
+
+ul {
+    list-style-type: disc; /* Use disc style for list items */
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0; /* Spacing between list items */
+}
